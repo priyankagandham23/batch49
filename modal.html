@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <button data-target="#abc"     data-toggle="modal">Click here</button>
+  <div class="modal" id="abc">
+      <div class="modal-dialog">
+          <div class="modal-content">
+<div class="modal-header">
+<h5>Title Here</h5>
+<button class="close" data-dismiss="modal">&times;</button>
+</div>
+<!-- Header Section closed -->
+<div class="modal-body">
+    <form  class="needs-validation" novalidate>
+        <div class="form-group">
+        <input type="text"  class="form-control" placeholder="Enter a username" required="">
+    <span class="invalid-feedback">Please enter user details</span>
+    </div>
+    <div class="form-group">
+        <input type="password"   placeholder="Enter a Password" class="form-control" required>
+    <span class="invalid-feedback">Please enter password</span>
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="date" name="" id="" required>
+    </div>
+    <div class="form-group">
+        <label>Gender</label>
+    <div class="form-check-inline border p-1">
+    <input class="form-check-input" type="radio" name="n1" id="">
+    <label class="form-check-label" for="">Male</label>
+    </div>
+    <div class="form-check-inline border p-1">
+    <input class="form-check-input" type="radio" name="n1" id="">
+    <label class="form-check-label" for="">Female</label>
+    </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label" for="">RememberMe</label>
+    </div>
+    </div>
+        <input type="submit" value="Login" class="btn btn-primary btn-block">
+    </form>
+</div>
+<!-- Body Section closed -->
+<div class="modal-footer">
+<button class="btn btn-success" data-dismiss="modal">Close</button>
+</div>
+
+
+
+            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit veniam sed totam incidunt, eos illum repudiandae commodi distinctio ducimus possimus laborum. Debitis totam minus commodi suscipit adipisci explicabo, omnis, quas hic praesentium ut minima eum dolorem at placeat esse ea.</p> -->
+          </div>
+      </div>
+  </div>
+<script>
+    var f1=document.querySelector('.needs-validation');
+    f1.addEventListener('submit',function(e){
+       
+       if(f1.checkValidity()===false){
+        e.preventDefault();
+        e.stopPropagation();
+       }
+       f1.classList.add('was-validated');
+    })
+    </script>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
